@@ -11,7 +11,7 @@ public class S_Bullet : MonoBehaviour
     public float speed = 20f;
     private Rigidbody2D rb;
 
-    
+    public int Damage = 1;
 
     public float timer;
 

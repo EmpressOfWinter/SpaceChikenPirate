@@ -13,6 +13,8 @@ public class S_PLAYER_WEAPON : MonoBehaviour
 
     public int score;
 
+    private bool addindScore;
+
    public void Shoot()
     {
         GameObject bullet = Instantiate(bulletPrefab, firepoint.position, firepoint.rotation);
@@ -22,12 +24,26 @@ public class S_PLAYER_WEAPON : MonoBehaviour
 
     private void Start()
     {
+        addindScore = false;
         score = 0;
     }
 
     void Update()
     {
+        if (addindScore == false)
+        {
+            StartCoroutine(ScoreTimer());
+            addindScore = true;
+        }
+
         ScoreDisplay.text = score.ToString();
+    }
+
+    IEnumerator ScoreTimer()
+    {
+        yield return new WaitForSeconds(1);
+        addindScore = false;
+        score++;
     }
 
 }

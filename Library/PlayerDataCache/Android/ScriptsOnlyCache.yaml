@@ -44,33 +44,33 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9322}
-    - Class: 114
-      Script: {instanceID: 9324}
+      Script: {instanceID: 9328}
     - Class: 114
       Script: {instanceID: 9330}
     - Class: 114
       Script: {instanceID: 9336}
     - Class: 114
-      Script: {instanceID: 9344}
+      Script: {instanceID: 9342}
     - Class: 114
-      Script: {instanceID: 9380}
+      Script: {instanceID: 9350}
     - Class: 114
-      Script: {instanceID: 9382}
+      Script: {instanceID: 9386}
+    - Class: 114
+      Script: {instanceID: 9388}
     - Class: 114
       Script: {instanceID: 9768}
     - Class: 114
+      Script: {instanceID: 9774}
+    - Class: 114
       Script: {instanceID: 10020}
     - Class: 114
-      Script: {instanceID: 10550}
+      Script: {instanceID: 10104}
     - Class: 114
-      Script: {instanceID: 11770}
+      Script: {instanceID: 10502}
     - Class: 114
-      Script: {instanceID: 12180}
+      Script: {instanceID: 10556}
     - Class: 114
-      Script: {instanceID: 13364}
-    - Class: 114
-      Script: {instanceID: 13570}
+      Script: {instanceID: 10610}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -574,6 +574,12 @@ ScriptsOnlyBuild:
     className: ControlTrack
   - hash:
       serializedVersion: 2
+      Hash: a318a82d5abde553e75543c7b3aba918
+    assemblyName: XiaomiSupport.dll
+    namespaceName: AppStoresSupport
+    className: AppStoreSettings
+  - hash:
+      serializedVersion: 2
       Hash: 78d419082f9df8da21b9c588f64b392e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -610,7 +616,7 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
-      Hash: 5cce467aa0ec1a71f733e5b98c7fa631
+      Hash: 62926d94840ae5bff2108fb7e74c8ad5
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: S_ENEMY
@@ -638,6 +644,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: ActivationPlayableAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 2bde029dfe958ff21875f7797536b3f2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: S_PLAYER_SWIP
   - hash:
       serializedVersion: 2
       Hash: 88cc9df3c6fc697bfbeacd24c0d6f2d7
@@ -682,6 +694,12 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityStore.dll
+    namespaceName: UnityEngine.Store
+    className: MainThreadDispatcher
+  - hash:
+      serializedVersion: 2
       Hash: ee0cef6caaac8ae485bfa82f000f0f7b
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -710,6 +728,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_StyleSheet
+  - hash:
+      serializedVersion: 2
+      Hash: 8bb26a5c5518229e334d9d844d0e7de0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: S_PLAYER_WEAPON
   - hash:
       serializedVersion: 2
       Hash: 5372ed2ce39229b1ac910757999a8be2
@@ -742,41 +766,17 @@ ScriptsOnlyBuild:
     className: SignalEmitter
   - hash:
       serializedVersion: 2
+      Hash: f5ed3090008d0c8f9f2e6676763a873c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: S_Bullet
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 2bde029dfe958ff21875f7797536b3f2
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: S_PLAYER_SWIP
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: UnityStore.dll
-    namespaceName: UnityEngine.Store
-    className: MainThreadDispatcher
-  - hash:
-      serializedVersion: 2
-      Hash: a318a82d5abde553e75543c7b3aba918
-    assemblyName: XiaomiSupport.dll
-    namespaceName: AppStoresSupport
-    className: AppStoreSettings
-  - hash:
-      serializedVersion: 2
-      Hash: 8bb26a5c5518229e334d9d844d0e7de0
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: S_PLAYER_WEAPON
-  - hash:
-      serializedVersion: 2
-      Hash: 802b8743557b454f7f7f6a4b0ea86a3e
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: S_Bullet
   platform: 13
   scenePathNames:
   - Assets/SCENES/LEVEL01.unity
-  playerPath: C:/Users/Megan/Documents/GitHub/SpaceChikenPirate/SpaceChicken.apk
+  playerPath: F:/Git/SpacePoulet/SpaceChicken2.apk

@@ -121,6 +121,7 @@ public class S_PLAYER_SWIP : MonoBehaviour
         //camAnim.SetTrigger("shake");
         //Instantiate(moveEffect, transform.position, Quaternion.identity);
         targetPos = new Vector2(transform.position.x, transform.position.y + increment);
+           
 
         transform.position = Vector2.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
     }
@@ -134,6 +135,7 @@ public class S_PLAYER_SWIP : MonoBehaviour
                 //camAnim.SetTrigger("shake");
                 //Instantiate(moveEffect, transform.position, Quaternion.identity);
                 targetPos = new Vector2(transform.position.x, transform.position.y - increment);
+                
 
                 transform.position = Vector2.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
             
