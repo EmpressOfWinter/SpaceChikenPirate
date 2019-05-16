@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 2927710848987658581}
   - component: {fileID: 2927710848987658582}
   - component: {fileID: 2927710848987658579}
-  m_Layer: 0
+  - component: {fileID: 8305290905392805958}
+  m_Layer: 10
   m_Name: SCP_Corn
-  m_TagString: Untagged
+  m_TagString: OBSTACLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94,9 +95,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.1, y: -0.14}
   serializedVersion: 2
-  m_Radius: 0.35
+  m_Radius: 0.26
 --- !u!114 &2927710848987658579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -112,3 +113,19 @@ MonoBehaviour:
   damage: 1
   speed: 5
   effect: {fileID: 0}
+--- !u!58 &8305290905392805958
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2927710848987658583}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.11, y: 0.07}
+  serializedVersion: 2
+  m_Radius: 0.2

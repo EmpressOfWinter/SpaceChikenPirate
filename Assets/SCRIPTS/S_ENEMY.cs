@@ -1,9 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class S_ENEMY : MonoBehaviour
+       
 {
+
+
+    
+
     public int damage = 1;
 
     public float speed;
@@ -17,18 +23,41 @@ public class S_ENEMY : MonoBehaviour
         {
             //player takes damage
 
-            other.GetComponent<Player>().health--;
+            other.GetComponent<S_PLAYER_SWIP>().health--;
             
             //Instantiate(effect, transform.position, Quaternion.identity);
+            Destroy(gameObject);
+        }
+        else
+        {
+
+            GetComponent<S_PLAYER_WEAPON>().score--;
             Destroy(gameObject);
         }
 
 
         if (other.CompareTag("Borders"))
         {
-        Destroy(gameObject);
+            Destroy(gameObject);
+
         }
-           
+        else
+        {
+
+                GetComponent<S_PLAYER_WEAPON>().score--;
+                Destroy(gameObject);
+            
+        }
+
+
+
+        //if (other.CompareTag("BULLET"))
+        {
+            //GetComponent<S_PLAYER_WEAPON>().score--;
+            //Destroy(gameObject);
+        }
+
+
 
     }
 
