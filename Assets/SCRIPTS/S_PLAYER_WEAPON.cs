@@ -15,7 +15,9 @@ public class S_PLAYER_WEAPON : MonoBehaviour
 
    public void Shoot()
     {
-        Instantiate(bulletPrefab, firepoint.position, firepoint.rotation);
+        GameObject bullet = Instantiate(bulletPrefab, firepoint.position, firepoint.rotation);
+        bullet.GetComponent<S_Bullet>().Weapon = this.gameObject;
+
     }
 
     private void Start()

@@ -7,7 +7,7 @@ public class S_Bullet : MonoBehaviour
 {
     
     
-
+    public GameObject Weapon;
     public float speed = 20f;
     private Rigidbody2D rb;
 

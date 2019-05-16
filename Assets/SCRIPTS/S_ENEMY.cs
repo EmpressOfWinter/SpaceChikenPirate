@@ -6,10 +6,6 @@ using UnityEngine.UI;
 public class S_ENEMY : MonoBehaviour
        
 {
-
-
-    
-
     public int damage = 1;
 
     public float speed;
@@ -28,50 +24,20 @@ public class S_ENEMY : MonoBehaviour
             //Instantiate(effect, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
-        else
-        {
-
-            GetComponent<S_PLAYER_WEAPON>().score--;
-            Destroy(gameObject);
-        }
-
-
-        if (other.CompareTag("Borders"))
+        else if (other.CompareTag("Borders"))
         {
             Destroy(gameObject);
-
         }
-        else
+        else if (other.CompareTag("BULLET"))
         {
-
-                GetComponent<S_PLAYER_WEAPON>().score--;
-                Destroy(gameObject);
-            
+            other.GetComponent<S_Bullet>().Weapon.GetComponent<S_PLAYER_WEAPON>().score++;
+            Destroy(gameObject);
         }
-
-
-
-        //if (other.CompareTag("BULLET"))
-        {
-            //GetComponent<S_PLAYER_WEAPON>().score--;
-            //Destroy(gameObject);
-        }
-
-
-
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
     }
 
     // Update is called once per frame
     void Update()
     {
         transform.Translate(Vector2.left * speed * Time.deltaTime);
-
-
     }
 }
